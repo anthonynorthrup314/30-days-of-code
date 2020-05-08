@@ -44,17 +44,17 @@ On the first line, we print the string literal `Hello, World.`. On the second li
 ## Progress
 
 - Completed:
-    - C
-    - C++
-    - C#
-    - Haskell
-    - Java 7
-    - Java 8
-    - Perl
-    - PHP
-    - Python 2
-    - Python 3
-    - Ruby
+    - [C](#c)
+    - [C++](#c-1)
+    - [C#](#c-2)
+    - [Haskell](#haskell)
+    - [Java 7](#java-7)
+    - [Java 8](#java-8)
+    - [Perl](#perl)
+    - [PHP](#php)
+    - [Python 2](#python-2)
+    - [Python 3](#python-3)
+    - [Ruby](#ruby)
 - TODO:
     - Ada
     - BASH
