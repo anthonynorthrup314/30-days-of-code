@@ -52,6 +52,7 @@ On the first line, we print the string literal `Hello, World.`. On the second li
     - [Common Lisp (SBCL)](common-lisp-sbcl)
     - [D](#d)
     - [Erlang](#erlang)
+    - [F#](#f)
     - [Go](#go)
     - [Groovy](#groovy)
     - [Haskell](#haskell)
@@ -74,7 +75,6 @@ On the first line, we print the string literal `Hello, World.`. On the second li
     - COBOL (Up next...)
     - CoffeeScript
     - Elixir
-    - F#
     - Fortran
     - Julia
     - Kotlin
