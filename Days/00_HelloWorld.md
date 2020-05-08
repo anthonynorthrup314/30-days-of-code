@@ -44,49 +44,61 @@ On the first line, we print the string literal `Hello, World.`. On the second li
 ## Progress
 
 - Completed:
+    - [BASH](#bash)
     - [C](#c)
     - [C++](#c-1)
     - [C#](#c-2)
+    - [Clojure](#clojure)
+    - Common Lisp (SBCL)
+    - [D](#d)
+    - [Erlang](#erlang)
+    - [Go](#go)
+    - [Groovy](#groovy)
     - [Haskell](#haskell)
     - [Java 7](#java-7)
     - [Java 8](#java-8)
+    - JavaScript (Node.js)
+    - [Lua](#lua)
+    - [Objective-C](#objective-c)
+    - [OCaml](#ocaml)
+    - [Pascal](#pascal)
     - [Perl](#perl)
     - [PHP](#php)
     - [Python 2](#python-2)
     - [Python 3](#python-3)
     - [Ruby](#ruby)
+    - [Scala](#scala)
 - TODO:
     - Ada
-    - BASH
     - C++14
-    - Clojure: *Up next (HackerRank's ordering is strange)*
-    - COBOL
+    - COBOL (Up next...)
     - CoffeeScript
-    - Common Lisp (SBCL)
-    - D
     - Elixir
-    - Erlang
     - F#
     - Fortran
-    - Go
-    - Groovy
-    - JavaScript (Node.js)
     - Julia
     - Kotlin
-    - Lua
-    - Objective-C
-    - OCaml
-    - Pascal
     - Pypy 2
     - Pypy 3
     - Racket
     - Rust
-    - Scala
     - Swift
     - Tcl
     - VB.NET
 
 ## Solutions
+
+### BASH
+
+```bash
+read inputString # get a line of input from stdin and save it to our variable
+
+# Your first line of output goes here
+echo 'Hello, World.'
+
+# Write the second line of output
+echo $inputString
+```
 
 ### C
 
@@ -166,6 +178,114 @@ class Solution {
 }
 ```
 
+### Clojure
+
+```clojure
+; Enter your code here. Read input from STDIN. Print output to STDOUT
+;
+(def input-string (read-line))
+(println "Hello, World.")
+(println input-string)
+```
+
+Reference:
+
+- [https://clojuredocs.org/clojure.core/println](https://clojuredocs.org/clojure.core/println)
+- [https://clojuredocs.org/clojure.core/read-line](https://clojuredocs.org/clojure.core/read-line)
+
+### Common Lisp (SBCL)
+
+```lisp
+;; Enter your code here. Read input from STDIN. Print output to STDOUT
+(let ((input-string (read-line)))
+    (write-line "Hello, World.")
+    (write-line input-string)
+    (force-output))
+```
+
+Reference: [http://www.sbcl.org/manual/](http://www.sbcl.org/manual/)
+
+### D
+
+```d
+/* Enter your code here. Read input from STDIN. Print output to STDOUT */
+import std.stdio;
+
+void main()
+{
+    string input_string = readln();
+    writeln("Hello, World.");
+    writeln(input_string);
+}
+```
+
+Reference: [https://dlang.org/phobos/std_stdio.html#.readln](https://dlang.org/phobos/std_stdio.html#.readln)
+
+### Erlang
+
+```erlang
+% Enter your code here. Read input from STDIN. Print output to STDOUT
+% Your class should be named solution
+
+-module(solution).
+-export([main/0]).
+
+main() ->
+    InputString = io:get_line(""),
+    io:fwrite("Hello, World.~n"),
+    io:fwrite("~s~n", [InputString]).
+
+```
+
+Reference:
+
+- [https://erlang.org/doc/man/io.html#fwrite-1](https://erlang.org/doc/man/io.html#fwrite-1)
+- [https://erlang.org/doc/man/io.html#get_line-1](https://erlang.org/doc/man/io.html#get_line-1)
+
+### F#
+
+```fsharp
+//Enter your code here. Read input from STDIN. Print output to STDOUT
+open System
+let inputString = Console.ReadLine()
+printfn "Hello, World."
+printfn "%s" inputString
+```
+
+Reference: [https://www.tutorialspoint.com/fsharp/fsharp_basic_io.htm](https://www.tutorialspoint.com/fsharp/fsharp_basic_io.htm)
+
+### Go
+
+```go
+package main
+import (
+    "bufio"
+    "fmt"
+    "os"
+)
+
+func main() {
+    //Enter your code here. Read input from STDIN. Print output to STDOUT
+    reader := bufio.NewReader(os.Stdin)
+    input_string, _ := reader.ReadString('\n')
+    fmt.Println("Hello, World.")
+    fmt.Println(input_string)
+}
+```
+
+Reference: [https://riptutorial.com/go/example/30034/read-input-from-console](https://riptutorial.com/go/example/30034/read-input-from-console)
+
+### Groovy
+
+```groovy
+//Enter your code here. Read input from STDIN. Print output to STDOUT
+def inputString = System.in.newReader().readLine()
+println "Hello, World."
+println inputString
+```
+
+Reference: [https://code-maven.com/groovy-read-from-stdin](https://code-maven.com/groovy-read-from-stdin)
+
 ### Haskell
 
 ```haskell
@@ -235,6 +355,91 @@ public class Solution {
     }
 }
 ```
+
+### JavaScript (Node.js)
+
+```js
+function processData(inputString) {
+    // This line of code prints the first line of output
+    console.log("Hello, World.");
+    
+    // Write the second line of output that prints the contents of 'inputString' here.
+    console.log(inputString);
+}
+
+
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+_input = "";
+process.stdin.on("data", function (input) {
+    _input += input;
+});
+
+process.stdin.on("end", function () {
+   processData(_input);
+});
+```
+
+### Lua
+
+```lua
+-- Enter your code here. Read input from STDIN. Print output to STDOUT
+input_string = io.read("*line")
+print("Hello, World.")
+print(input_string)
+```
+
+Reference: [https://www.lua.org/pil/21.1.html](https://www.lua.org/pil/21.1.html)
+
+### Objective-C
+
+```objectivec
+//Enter your code here. Read input from STDIN. Print output to STDOUT
+int main() {
+    @autoreleasepool {
+        char input_string[105];
+        scanf("%[^\n]", input_string);
+        printf("Hello, World.\n");
+        printf("%s\n", input_string);
+        return 0;
+    }
+}
+```
+
+Note: This is the code from the [C](#c) solution above, but with a surrounding `@autoreleasepool{ }`. According to [https://www.hackerrank.com/environment/sample-problem/objc](https://www.hackerrank.com/environment/sample-problem/objc) we should avoid using NSLog, so there's no point in using NSString, or really, any actual Objective-C functionality.
+
+### OCaml
+
+```ocaml
+(* Enter your code here. Read input from STDIN. Print output to STDOUT *)
+let input_string = read_line ()
+in
+    let () = print_string "Hello, World." in
+    let () = print_newline () in
+    let () = print_string input_string in
+        print_newline ();;
+```
+
+Reference: [https://caml.inria.fr/pub/docs/oreilly-book/html/book-ora027.html](https://caml.inria.fr/pub/docs/oreilly-book/html/book-ora027.html)
+
+### Pascal
+
+```pascal
+(* Enter your code here. Read input from STDIN. Print output to STDOUT *)
+
+Var InputString : String;
+
+Begin
+    ReadLn(InputString);
+    WriteLn('Hello, World.');
+    WriteLn(InputString);
+End.
+```
+
+Reference:
+
+- [https://www.freepascal.org/docs-html/rtl/system/readln.html](https://www.freepascal.org/docs-html/rtl/system/readln.html)
+- [https://www.freepascal.org/docs-html/rtl/system/read.html](https://www.freepascal.org/docs-html/rtl/system/read.html)
 
 ### Perl
 
@@ -307,4 +512,21 @@ puts 'Hello, World.'
 
 # Write a line of code here that prints the contents of input_string to stdout.
 puts input_string
+```
+
+### Scala
+
+```scala
+object Solution {
+    def main(args: Array[String]) {
+        // Print "Hello, World."
+        println("Hello, World.")
+
+        // Read a string variable
+        val s = scala.io.StdIn.readLine()
+
+        // Print the value of the string variable
+        println(s)
+    }
+}
 ```

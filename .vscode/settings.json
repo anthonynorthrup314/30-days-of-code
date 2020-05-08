@@ -2,6 +2,8 @@
     "cSpell.words": [
         "Pypy",
         "SBCL",
+        "autoreleasepool",
+        "bufio",
         "cmath",
         "cout",
         "cstdio",
@@ -9,11 +11,15 @@
         "fclose",
         "fgets",
         "fopen",
+        "fwrite",
         "getline",
         "iostream",
         "printf",
+        "printfn",
         "println",
+        "readln",
         "scanf",
-        "stdlib"
+        "stdlib",
+        "writeln"
     ]
 }
