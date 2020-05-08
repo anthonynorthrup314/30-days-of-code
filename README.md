@@ -4,7 +4,7 @@ Completing [HackerRank's 30 Days of Code challenge](https://www.hackerrank.com/d
 
 ## Progress
 
-- [Day 0: Hello World](./Days/00_HelloWorld) - WIP
+- [Day 0: Hello World](./Days/00_HelloWorld.md) - WIP
 - Day 1: Data Types - N/A
 - Day 2: Operators - N/A
 - Day 3: Intro to Conditional Statements - N/A
