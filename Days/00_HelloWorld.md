@@ -43,7 +43,7 @@ On the first line, we print the string literal `Hello, World.`. On the second li
 
 ## Progress
 
-- Completed:
+- Completed: 25
     - [BASH](#bash)
     - [C](#c)
     - [C++](#c-1)
@@ -69,7 +69,7 @@ On the first line, we print the string literal `Hello, World.`. On the second li
     - [Python 3](#python-3)
     - [Ruby](#ruby)
     - [Scala](#scala)
-- TODO:
+- TODO: 15
     - Ada
     - C++14
     - COBOL (Up next...)
