@@ -113,6 +113,8 @@ int main() {
 }
 ```
 
+Reference: [https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm](https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm)
+
 ### C++
 
 ```c++
