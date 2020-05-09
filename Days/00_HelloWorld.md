@@ -187,16 +187,16 @@ int main() {
 #include <algorithm>
 using namespace std;
 int main() {
-   string inputString; // declare a variable to hold our input
-   getline(cin, inputString); // get a line of input from cin and save it to our variable
-  
-   // Your first line of output goes here
-   cout << "Hello, World." << endl;
+    string inputString; // declare a variable to hold our input
+    getline(cin, inputString); // get a line of input from cin and save it to our variable
 
-   // Write the second line of output
-   cout << inputString << endl;
+    // Your first line of output goes here
+    cout << "Hello, World." << endl;
 
-   return 0;
+    // Write the second line of output
+    cout << inputString << endl;
+
+    return 0;
 }
 ```
 
@@ -350,7 +350,7 @@ Reference: [https://www.tutorialspoint.com/fsharp/fsharp_basic_io.htm](https://w
 
 ```fortran
 ! Enter your code here 
-program helloWorld
+program solution
 implicit none
 
     character (len = 105) :: input_string
@@ -358,7 +358,7 @@ implicit none
     print "(a)","Hello, World."
     print "(a)",input_string
    
-end program helloWorld
+end program solution
 ```
 
 Reference: [https://www.tutorialspoint.com/fortran/fortran_basic_input_output.htm](https://www.tutorialspoint.com/fortran/fortran_basic_input_output.htm)

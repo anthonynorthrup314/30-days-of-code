@@ -57,15 +57,15 @@ When we concatenate HackerRank with `is the best place to learn and practice cod
 
 ## Progress
 
-- Completed: 0
-- TODO: 19
-    - C
+- Completed: 3
+    - [C](#c)
+    - [Java 7](#java-7)
+    - [Java 8](#java-8)
+- TODO: 16
     - C#
-    - C++
+    - C++ (Up next...)
     - C++14
     - Go
-    - Java 7 (Up next...)
-    - Java 8
     - JavaScript (Node.js)
     - Julia
     - Perl
@@ -81,4 +81,141 @@ When we concatenate HackerRank with `is the best place to learn and practice cod
 
 ## Solutions
 
-Coming soon...
+### C
+
+```c
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    char s[] = "HackerRank ";
+
+    
+    // Declare second integer, double, and String variables.
+    int i2;
+    double d2;
+    char s2[105];
+    
+    // Read and save an integer, double, and String to your variables.
+    scanf("%d\n%lf\n%[^\n]", &i2, &d2, s2);
+    
+    // Print the sum of both integer variables on a new line.
+    printf("%d\n", i + i2);
+    
+    // Print the sum of the double variables on a new line.
+    printf("%.1lf\n", d + d2);
+    
+    // Concatenate and print the String variables on a new line
+    // The 's' variable above should be printed first.
+    printf("%s%s\n", s, s2);
+
+    return 0;
+}
+```
+
+Reference:
+
+- [https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm)
+- [https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm](https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm)
+
+### Java 7
+
+```java
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+	
+    public static void main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
+		
+        Scanner scan = new Scanner(System.in);
+
+        /* Declare second integer, double, and String variables. */
+        int i2;
+        double d2;
+        String s2;
+
+        /* Read and save an integer, double, and String to your variables.*/
+        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        i2 = Integer.parseInt(scan.nextLine());
+        d2 = Double.parseDouble(scan.nextLine());
+        s2 = scan.nextLine();
+
+        /* Print the sum of both integer variables on a new line. */
+        System.out.println(i + i2);
+
+        /* Print the sum of the double variables on a new line. */
+        System.out.println(d + d2);
+		
+        /* Concatenate and print the String variables on a new line; 
+        	the 's' variable above should be printed first. */
+        System.out.println(s + s2);
+
+        scan.close();
+    }
+}
+```
+
+Reference:
+
+- [https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html#parseInt(java.lang.String)](https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html#parseInt(java.lang.String))
+- [https://docs.oracle.com/javase/7/docs/api/java/lang/Double.html#parseDouble(java.lang.String)](https://docs.oracle.com/javase/7/docs/api/java/lang/Double.html#parseDouble(java.lang.String))
+
+### Java 8
+
+```java
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+	
+    public static void main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
+		
+        Scanner scan = new Scanner(System.in);
+
+        /* Declare second integer, double, and String variables. */
+        int i2;
+        double d2;
+        String s2;
+
+        /* Read and save an integer, double, and String to your variables.*/
+        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        i2 = Integer.parseInt(scan.nextLine());
+        d2 = Double.parseDouble(scan.nextLine());
+        s2 = scan.nextLine();
+        
+        /* Print the sum of both integer variables on a new line. */
+        System.out.println(i + i2);
+
+        /* Print the sum of the double variables on a new line. */
+        System.out.println(d + d2);
+		
+        /* Concatenate and print the String variables on a new line; 
+        	the 's' variable above should be printed first. */
+        System.out.println(s + s2);
+
+        scan.close();
+    }
+}
+```
+
+Reference:
+
+- [https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#parseInt-java.lang.String-](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#parseInt-java.lang.String-)
+- [https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html#parseDouble-java.lang.String-](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html#parseDouble-java.lang.String-)
