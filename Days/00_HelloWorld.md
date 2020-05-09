@@ -43,50 +43,71 @@ On the first line, we print the string literal `Hello, World.`. On the second li
 
 ## Progress
 
-- Completed: 29
+- Completed: 39
+    - [Ada](#ada)
     - [BASH](#bash)
     - [C](#c)
     - [C++](#c-1)
-    - [C#](#c-2)
+    - [C++14](#c-2)
+    - [C#](#c-3)
     - [Clojure](#clojure)
     - [COBOL](#cobol)
     - [Common Lisp (SBCL)](common-lisp-sbcl)
     - [D](#d)
+    - [Elixir](#elixir)
     - [Erlang](#erlang)
     - [F#](#f)
+    - [Fortran](#fortran)
     - [Go](#go)
     - [Groovy](#groovy)
     - [Haskell](#haskell)
     - [Java 7](#java-7)
     - [Java 8](#java-8)
     - [JavaScript (Node.js)](javascript-nodejs)
+    - [Julia](#julia)
+    - [Kotlin](#kotlin)
     - [Lua](#lua)
     - [Objective-C](#objective-c)
     - [OCaml](#ocaml)
     - [Pascal](#pascal)
     - [Perl](#perl)
     - [PHP](#php)
+    - [Pypy 2](#pypy-2)
+    - [Pypy 3](#pypy-3)
     - [Python 2](#python-2)
     - [Python 3](#python-3)
     - [Racket](#racket)
     - [Ruby](#ruby)
+    - [Rust](#rust)
     - [Scala](#scala)
+    - [Swift](#swift)
     - [Tcl](#tcl)
     - [VB.NET](#vbnet)
-- TODO: 11
-    - Ada
-    - C++14
+- Skipped: 1
     - CoffeeScript
-    - Elixir
-    - Fortran
-    - Julia
-    - Kotlin
-    - Pypy 2
-    - Pypy 3
-    - Rust (Up next...)
-    - Swift
+        - Even using solutions on the leaderboard doesn't work. `console.log` functions properly, but standard input never seems to provide anything.
+        - I added a note about this on their forum: [https://www.hackerrank.com/challenges/30-hello-world/forum/comments/764105](https://www.hackerrank.com/challenges/30-hello-world/forum/comments/764105)
 
 ## Solutions
+
+### Ada
+
+```ada
+with Ada.Text_IO, Ada.Integer_Text_IO;
+use Ada;
+
+procedure Solution is
+-- Enter your code here. Read input from STDIN. Print output to STDOUT
+    InputString : String(1 .. 105);
+    InputLength : Natural;
+begin
+    Text_IO.Get_Line (InputString, InputLength);
+    Text_IO.Put_Line ("Hello, World.");
+    Text_IO.Put_Line (InputString (1 .. InputLength));
+end Solution;
+```
+
+Reference: [https://en.wikibooks.org/wiki/Ada_Programming/Input_Output](https://en.wikibooks.org/wiki/Ada_Programming/Input_Output)
 
 ### BASH
 
@@ -131,7 +152,7 @@ Reference: [https://www.tutorialspoint.com/c_standard_library/c_function_printf.
 
 ### C++
 
-```c++
+```cpp
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -153,6 +174,29 @@ int main() {
     cout << input_string << endl;
 
     return 0;
+}
+```
+
+### C++14
+
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+   string inputString; // declare a variable to hold our input
+   getline(cin, inputString); // get a line of input from cin and save it to our variable
+  
+   // Your first line of output goes here
+   cout << "Hello, World." << endl;
+
+   // Write the second line of output
+   cout << inputString << endl;
+
+   return 0;
 }
 ```
 
@@ -256,6 +300,19 @@ void main()
 
 Reference: [https://dlang.org/phobos/std_stdio.html#.readln](https://dlang.org/phobos/std_stdio.html#.readln)
 
+### Elixir
+
+```elixir
+defmodule Solution do
+#Enter your code here. Read input from STDIN. Print output to STDOUT
+inputString = IO.gets("")
+IO.puts("Hello, World.")
+IO.puts(inputString)
+end
+```
+
+Reference: [https://elixir-lang.org/getting-started/io-and-the-file-system.html](https://elixir-lang.org/getting-started/io-and-the-file-system.html)
+
 ### Erlang
 
 ```erlang
@@ -288,6 +345,23 @@ printfn "%s" inputString
 ```
 
 Reference: [https://www.tutorialspoint.com/fsharp/fsharp_basic_io.htm](https://www.tutorialspoint.com/fsharp/fsharp_basic_io.htm)
+
+### Fortran
+
+```fortran
+! Enter your code here 
+program helloWorld
+implicit none
+
+    character (len = 105) :: input_string
+    read "(a)",input_string
+    print "(a)","Hello, World."
+    print "(a)",input_string
+   
+end program helloWorld
+```
+
+Reference: [https://www.tutorialspoint.com/fortran/fortran_basic_input_output.htm](https://www.tutorialspoint.com/fortran/fortran_basic_input_output.htm)
 
 ### Go
 
@@ -415,6 +489,36 @@ process.stdin.on("end", function () {
 });
 ```
 
+### Julia
+
+```julia
+# Enter your code here 
+inputString = readline()
+println("Hello, World.")
+println(inputString)
+```
+
+Reference:
+
+- [http://www.jlhub.com/julia/manual/en/function/readline](http://www.jlhub.com/julia/manual/en/function/readline)
+- [http://www.jlhub.com/julia/manual/en/function/println](http://www.jlhub.com/julia/manual/en/function/println)
+
+### Kotlin
+
+```kotlin
+import java.io.*
+import java.util.*
+
+fun main(args: Array<String>) {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT. */
+    val inputString = readLine()!!
+    println("Hello, World.")
+    println(inputString)
+}
+```
+
+Reference: [https://www.programiz.com/kotlin-programming/input-output](https://www.programiz.com/kotlin-programming/input-output)
+
 ### Lua
 
 ```lua
@@ -510,6 +614,30 @@ fclose($_fp);
 
 Reference: [https://www.php.net/manual/en/language.operators.string.php](https://www.php.net/manual/en/language.operators.string.php)
 
+### Pypy 2
+
+```pypy
+inputString = raw_input() # get a line of input from stdin and save it to our variable
+
+# Your first line of output goes here
+print 'Hello, World.'
+
+# Write the second line of output
+print inputString
+```
+
+### Pypy 3
+
+```pypy
+inputString = input() # get a line of input from stdin and save it to our variable
+
+# Your first line of output goes here
+print('Hello, World.')
+
+# Write the second line of output
+print(inputString)
+```
+
 ### Python 2
 
 ```python
@@ -565,6 +693,24 @@ puts 'Hello, World.'
 puts input_string
 ```
 
+### Rust
+
+```rust
+use std::io;
+
+fn main() -> () {
+    let mut input_string = String::new();
+    io::stdin().read_line(&mut input_string);
+    println!("Hello, World.");
+    println!("{}", input_string);
+}
+```
+
+Reference:
+
+- [https://doc.rust-lang.org/std/io/struct.Stdin.html#method.read_line](https://doc.rust-lang.org/std/io/struct.Stdin.html#method.read_line)
+- [https://doc.rust-lang.org/1.6.0/std/macro.println!.html](https://doc.rust-lang.org/1.6.0/std/macro.println!.html)
+
 ### Scala
 
 ```scala
@@ -580,6 +726,18 @@ object Solution {
         println(s)
     }
 }
+```
+
+### Swift
+
+```swift
+let inputString = readLine()! // get a line of input from stdin and save it to our variable
+
+// Your first line of output goes here
+print("Hello, World.")
+
+// Write the second line of output
+print(inputString)
 ```
 
 ### Tcl

@@ -4,7 +4,7 @@ Completing [HackerRank's 30 Days of Code challenge](https://www.hackerrank.com/d
 
 ## Progress
 
-- [Day 0: Hello World](./Days/00_HelloWorld.md) - 29/40 languages completed
+- [Day 0: Hello World](./Days/00_HelloWorld.md) - 39/40 languages completed
 - [Day 1: Data Types](./Days/01_DataTypes.md) - 0/19 languages completed
 - Day 2: Operators
 - Day 3: Intro to Conditional Statements
