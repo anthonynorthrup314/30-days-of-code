@@ -43,12 +43,13 @@ On the first line, we print the string literal `Hello, World.`. On the second li
 
 ## Progress
 
-- Completed: 25
+- Completed: 29
     - [BASH](#bash)
     - [C](#c)
     - [C++](#c-1)
     - [C#](#c-2)
     - [Clojure](#clojure)
+    - [COBOL](#cobol)
     - [Common Lisp (SBCL)](common-lisp-sbcl)
     - [D](#d)
     - [Erlang](#erlang)
@@ -67,12 +68,14 @@ On the first line, we print the string literal `Hello, World.`. On the second li
     - [PHP](#php)
     - [Python 2](#python-2)
     - [Python 3](#python-3)
+    - [Racket](#racket)
     - [Ruby](#ruby)
     - [Scala](#scala)
-- TODO: 15
+    - [Tcl](#tcl)
+    - [VB.NET](#vbnet)
+- TODO: 11
     - Ada
     - C++14
-    - COBOL (Up next...)
     - CoffeeScript
     - Elixir
     - Fortran
@@ -80,11 +83,8 @@ On the first line, we print the string literal `Hello, World.`. On the second li
     - Kotlin
     - Pypy 2
     - Pypy 3
-    - Racket
-    - Rust
+    - Rust (Up next...)
     - Swift
-    - Tcl
-    - VB.NET
 
 ## Solutions
 
@@ -99,6 +99,8 @@ echo 'Hello, World.'
 # Write the second line of output
 echo $inputString
 ```
+
+Reference: [https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-5.html](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-5.html)
 
 ### C
 
@@ -192,6 +194,39 @@ Reference:
 
 - [https://clojuredocs.org/clojure.core/println](https://clojuredocs.org/clojure.core/println)
 - [https://clojuredocs.org/clojure.core/read-line](https://clojuredocs.org/clojure.core/read-line)
+
+### COBOL
+
+```cobol
+IDENTIFICATION DIVISION. 
+PROGRAM-ID. SOLUTION. 
+ENVIRONMENT DIVISION. 
+INPUT-OUTPUT SECTION. 
+FILE-CONTROL. 
+SELECT SYSIN ASSIGN TO KEYBOARD ORGANIZATION LINE SEQUENTIAL. 
+      
+DATA DIVISION. 
+    FILE SECTION. 
+    FD SYSIN. 
+    01 INPUT-STRING PIC X(255). *> This variable will hold a line of input from stdin.
+    88 EOF VALUE HIGH-VALUES. 
+ 
+PROCEDURE DIVISION. 
+    OPEN INPUT SYSIN 
+    READ SYSIN 
+    AT END SET EOF TO TRUE 
+    END-READ 
+    DISPLAY "Hello, World.". 
+
+    *> Write your code here to print the contents of the variable to stdout.
+    DISPLAY INPUT-STRING.
+      
+    CLOSE SYSIN.
+      
+STOP RUN.
+```
+
+Reference: [https://www.tutorialbrain.com/mainframe/cobol_display/](https://www.tutorialbrain.com/mainframe/cobol_display/)
 
 ### Common Lisp (SBCL)
 
@@ -501,6 +536,22 @@ print('Hello, World.')
 print(input_string)
 ```
 
+### Racket
+
+```racket
+#lang racket
+; Enter your code here. Read input from STDIN. Print output to STDOUT
+(let ([input-string (read-line)])
+    (displayln "Hello, World.")
+    (displayln input-string))
+```
+
+Reference: 
+
+- [https://docs.racket-lang.org/reference/Byte_and_String_Input.html](https://docs.racket-lang.org/reference/Byte_and_String_Input.html)
+- [https://docs.racket-lang.org/reference/Writing.html](https://docs.racket-lang.org/reference/Writing.html)
+    - *Note:* Using either `print[ln]` or `write[ln]` will result in quotes surrounding strings when displayed. `display[ln]` must be used to simply output the strings without quotes.
+
 ### Ruby
 
 ```ruby
@@ -529,4 +580,38 @@ object Solution {
         println(s)
     }
 }
+```
+
+### Tcl
+
+```tcl
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+set input_string [gets stdin]
+puts "Hello, World."
+puts $input_string
+```
+
+Reference: [http://zetcode.com/lang/tcl/io/](http://zetcode.com/lang/tcl/io/)
+
+### VB.NET
+
+```vbnet
+Imports System
+
+Module Solution
+    
+    Public Shared Sub Main()
+        ' Create a String variable:
+        Dim greeting As String 
+
+        ' Read value from stdin and save it to variable:
+        greeting = Console.ReadLine() 
+
+        ' Print "Hello, World." to stdout:
+        Console.WriteLine("Hello, World.")
+        
+        ' Write your code here; print the contents of the 'greeting' variable to stdout.
+        Console.WriteLine(greeting)
+    End Sub
+End Module
 ```
