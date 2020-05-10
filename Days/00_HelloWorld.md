@@ -234,7 +234,7 @@ class Solution {
 (println input-string)
 ```
 
-Reference:
+References:
 
 - [https://clojuredocs.org/clojure.core/println](https://clojuredocs.org/clojure.core/println)
 - [https://clojuredocs.org/clojure.core/read-line](https://clojuredocs.org/clojure.core/read-line)
@@ -329,7 +329,7 @@ main() ->
 
 ```
 
-Reference:
+References:
 
 - [https://erlang.org/doc/man/io.html#fwrite-1](https://erlang.org/doc/man/io.html#fwrite-1)
 - [https://erlang.org/doc/man/io.html#get_line-1](https://erlang.org/doc/man/io.html#get_line-1)
@@ -498,7 +498,7 @@ println("Hello, World.")
 println(inputString)
 ```
 
-Reference:
+References:
 
 - [http://www.jlhub.com/julia/manual/en/function/readline](http://www.jlhub.com/julia/manual/en/function/readline)
 - [http://www.jlhub.com/julia/manual/en/function/println](http://www.jlhub.com/julia/manual/en/function/println)
@@ -575,7 +575,7 @@ Begin
 End.
 ```
 
-Reference:
+References:
 
 - [https://www.freepascal.org/docs-html/rtl/system/readln.html](https://www.freepascal.org/docs-html/rtl/system/readln.html)
 - [https://www.freepascal.org/docs-html/rtl/system/read.html](https://www.freepascal.org/docs-html/rtl/system/read.html)
@@ -706,7 +706,7 @@ fn main() -> () {
 }
 ```
 
-Reference:
+References:
 
 - [https://doc.rust-lang.org/std/io/struct.Stdin.html#method.read_line](https://doc.rust-lang.org/std/io/struct.Stdin.html#method.read_line)
 - [https://doc.rust-lang.org/1.6.0/std/macro.println!.html](https://doc.rust-lang.org/1.6.0/std/macro.println!.html)
