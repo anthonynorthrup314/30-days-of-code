@@ -57,24 +57,24 @@ When we concatenate HackerRank with `is the best place to learn and practice cod
 
 ## Progress
 
-- Completed: 3
+- Completed: 9
     - [C](#c)
+    - [C++](#c-1)
+    - [C#](#c-2)
     - [Java 7](#java-7)
     - [Java 8](#java-8)
-- TODO: 16
-    - C#
-    - C++ (Up next...)
+    - [Perl](#perl)
+    - [PHP](#php)
+    - [Python 2](#python-2)
+    - [Ruby](#ruby)
+- TODO: 10
     - C++14
     - Go
-    - JavaScript (Node.js)
+    - JavaScript (Node.js) (Up next...)
     - Julia
-    - Perl
-    - PHP
     - Pypy 2
     - Pypy 3
-    - Python 2
     - Python 3
-    - Ruby
     - Scala
     - Swift
     - VB.NET
@@ -121,6 +121,95 @@ Reference:
 
 - [https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm](https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm)
 - [https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm](https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm)
+
+### C++
+
+```cpp
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+
+    
+    // Declare second integer, double, and String variables.
+    int i2;
+    double d2;
+    string s2;
+    
+    // Read and save an integer, double, and String to your variables.
+    // Note: If you have trouble reading the entire string, please go back and review the Tutorial closely.
+    cin >> i2 >> d2;
+    cin.ignore();
+    getline(cin, s2);
+    
+    // Print the sum of both integer variables on a new line.
+    cout << (i + i2) << endl;
+    
+    // Print the sum of the double variables on a new line.
+    cout << fixed << setprecision(1) << (d + d2) << endl;
+    
+    // Concatenate and print the String variables on a new line
+    // The 's' variable above should be printed first.
+    cout << s << s2 << endl;
+
+    return 0;
+}
+```
+
+Reference:
+
+- [http://www.cplusplus.com/reference/istream/istream/operator%3E%3E/](http://www.cplusplus.com/reference/istream/istream/operator%3E%3E/)
+- [http://www.cplusplus.com/reference/istream/istream/ignore/](http://www.cplusplus.com/reference/istream/istream/ignore/)
+- [http://www.cplusplus.com/reference/iomanip/setprecision/](http://www.cplusplus.com/reference/iomanip/setprecision/)
+
+### C#
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+class Solution {
+    static void Main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        string s = "HackerRank ";
+
+        
+        // Declare second integer, double, and String variables.
+        int i2;
+        double d2;
+        string s2;
+        
+        // Read and save an integer, double, and String to your variables.
+        i2 = int.Parse(Console.ReadLine());
+        d2 = double.Parse(Console.ReadLine());
+        s2 = Console.ReadLine();
+        
+        // Print the sum of both integer variables on a new line.
+        Console.WriteLine(i + i2);
+        
+        // Print the sum of the double variables on a new line.
+        Console.WriteLine("{0:F1}", d + d2);
+        
+        // Concatenate and print the String variables on a new line
+        // The 's' variable above should be printed first.
+        Console.WriteLine(s + s2);
+    }
+}
+```
+
+Reference:
+
+- [https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse](https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse)
+- [https://docs.microsoft.com/en-us/dotnet/api/system.double.parse](https://docs.microsoft.com/en-us/dotnet/api/system.double.parse)
+- [https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings)
 
 ### Java 7
 
@@ -219,3 +308,129 @@ Reference:
 
 - [https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#parseInt-java.lang.String-](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#parseInt-java.lang.String-)
 - [https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html#parseDouble-java.lang.String-](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html#parseDouble-java.lang.String-)
+
+### Perl
+
+```perl
+$i = 4;
+$d = 4.0;
+$s = 'HackerRank ';
+# Declare second integer, double, and String variables.
+
+# Read and save an integer, double, and String to your variables.
+$i2 = int <STDIN>;
+$d2 = <STDIN>;
+$s2 = <STDIN>;
+
+# Print the sum of both integer variables on a new line.
+printf "%d\n", ($i + $i2);
+
+# Print the sum of the double variables on a new line.
+printf "%.1f\n", ($d + $d2);
+
+# Concatenate and print the String variables on a new line
+# The 's' variable above should be printed first.
+print ($s . $s2 . "\n");
+```
+
+Reference:
+
+- [https://perldoc.perl.org/functions/int.html](https://perldoc.perl.org/functions/int.html)
+- [https://www.geeksforgeeks.org/perl-automatic-string-to-number-conversion-or-casting/](https://www.geeksforgeeks.org/perl-automatic-string-to-number-conversion-or-casting/)
+- [https://perldoc.perl.org/functions/printf.html](https://perldoc.perl.org/functions/printf.html)
+    - *Note:* This uses the same formatting rules as `sprintf`: [https://perldoc.perl.org/functions/sprintf.html](https://perldoc.perl.org/functions/sprintf.html)
+
+### PHP
+
+```php
+<?php
+$handle = fopen ("php://stdin","r");
+$i = 4;
+$d = 4.0;
+$s = "HackerRank ";
+// Declare second integer, double, and String variables.
+
+// Read and save an integer, double, and String to your variables.
+$i2 = intval(fgets($handle));
+$d2 = doubleval(fgets($handle));
+$s2 = fgets($handle);
+
+// Print the sum of both integer variables on a new line.
+print(($i + $i2) . "\n");
+
+// Print the sum of the double variables on a new line.
+print(number_format($d + $d2, 1) . "\n");
+
+// Concatenate and print the String variables on a new line
+// The 's' variable above should be printed first.
+print("{$s}{$s2}\n");
+
+fclose($handle);
+?>
+```
+
+Reference:
+
+- [https://www.php.net/manual/en/function.intval.php](https://www.php.net/manual/en/function.intval.php)
+- [https://www.php.net/manual/en/function.doubleval.php](https://www.php.net/manual/en/function.doubleval.php)
+- [https://www.php.net/manual/en/function.number-format.php](https://www.php.net/manual/en/function.number-format.php)
+
+### Python 2
+
+```python
+i = 4
+d = 4.0
+s = 'HackerRank '
+# Declare second integer, double, and String variables.
+
+# Read and save an integer, double, and String to your variables.
+i2 = int(raw_input())
+d2 = float(raw_input())
+s2 = raw_input()
+
+# Print the sum of both integer variables on a new line.
+print (i + i2)
+
+# Print the sum of the double variables on a new line.
+print "{:.1f}".format(d + d2)
+
+# Concatenate and print the String variables on a new line
+# The 's' variable above should be printed first.
+print (s + s2)
+```
+
+Reference:
+
+- [https://docs.python.org/2.7/library/functions.html#int](https://docs.python.org/2.7/library/functions.html#int)
+- [https://docs.python.org/2.7/library/functions.html#float](https://docs.python.org/2.7/library/functions.html#float)
+- [https://docs.python.org/2.7/library/string.html#format-examples](https://docs.python.org/2.7/library/string.html#format-examples)
+
+### Ruby
+
+```ruby
+i = 4
+d = 4.0
+s = 'HackerRank '
+# Declare second integer, double, and String variables.
+
+# Read and save an integer, double, and String to your variables.
+i2 = Integer(gets)
+d2 = Float(gets)
+s2 = gets
+
+# Print the sum of both integer variables on a new line.
+puts (i + i2)
+
+# Print the sum of the double variables on a new line.
+puts sprintf("%.1f", d + d2)
+
+# Concatenate and print the String variables on a new line
+# The 's' variable above should be printed first.
+puts (s + s2)
+```
+
+References:
+
+- [https://ruby-doc.org/core-2.5.0/Kernel.html#method-i-Integer](https://ruby-doc.org/core-2.5.0/Kernel.html#method-i-Integer)
+- [https://ruby-doc.org/core-2.5.0/Kernel.html#method-i-Float](https://ruby-doc.org/core-2.5.0/Kernel.html#method-i-Float)
+- [https://ruby-doc.org/core-2.5.0/Kernel.html#method-i-sprintf](https://ruby-doc.org/core-2.5.0/Kernel.html#method-i-sprintf)

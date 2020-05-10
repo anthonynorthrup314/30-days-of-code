@@ -61,9 +61,9 @@ We round ***`totalCost`*** to the nearest dollar (integer) and then print our re
 
 - TODO: 23
     - C (Up next...)
-    - C#
     - C++
     - C++14
+    - C#
     - Clojure
     - Erlang
     - Go
