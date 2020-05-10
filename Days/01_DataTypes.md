@@ -60,8 +60,8 @@ When we concatenate HackerRank with `is the best place to learn and practice cod
 - Completed: 19
     - [C](#c)
     - [C++](#c-1)
-    - [C++14](#c-2)
-    - [C#](#c-3)
+    - [C++14](#c14)
+    - [C#](#c-2)
     - [Go](#go)
     - [Java 7](#java-7)
     - [Java 8](#java-8)
