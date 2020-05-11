@@ -7,7 +7,7 @@ Completing [HackerRank's 30 Days of Code challenge](https://www.hackerrank.com/d
 - [Day 0: Hello World](./Days/00_HelloWorld.md) - 39/40 languages completed
 - [Day 1: Data Types](./Days/01_DataTypes.md) - 19/19 languages completed
 - [Day 2: Operators](./Days/02_Operators.md) - 8/23 languages completed
-- Day 3: Intro to Conditional Statements
+- [Day 3: Intro to Conditional Statements](./Days/03_IntroToConditionalStatements.md) - 1/37 languages completed
 - Day 4: Class vs. Instance
 - Day 5: Loops
 - Day 6: Let's Review
