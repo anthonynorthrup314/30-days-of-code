@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "Itoa",
+        "Linq",
         "Pypy",
         "SBCL",
         "SYSIN",
@@ -12,6 +13,7 @@
         "cstdio",
         "currentline",
         "defmodule",
+        "defn",
         "displayln",
         "doubleval",
         "endl",
@@ -36,10 +38,12 @@
         "setprecision",
         "sprintf",
         "stdbool",
+        "stdc",
         "stddef",
         "stdint",
         "stdlib",
         "strconv",
+        "streamsize",
         "strlen",
         "strtod",
         "strtol",

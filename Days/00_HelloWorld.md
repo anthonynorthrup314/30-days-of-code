@@ -202,7 +202,7 @@ int main() {
 
 ### C#
 
-```c#
+```csharp
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -326,7 +326,6 @@ main() ->
     InputString = io:get_line(""),
     io:fwrite("Hello, World.~n"),
     io:fwrite("~s~n", [InputString]).
-
 ```
 
 References:
@@ -382,7 +381,10 @@ func main() {
 }
 ```
 
-Reference: [https://riptutorial.com/go/example/30034/read-input-from-console](https://riptutorial.com/go/example/30034/read-input-from-console)
+References:
+
+- [https://riptutorial.com/go/example/30034/read-input-from-console](https://riptutorial.com/go/example/30034/read-input-from-console)
+- [https://tour.golang.org/basics/2](https://tour.golang.org/basics/2)
 
 ### Groovy
 
